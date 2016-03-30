@@ -1,0 +1,5 @@
+package com.jhyarrow.webService.dao;
+
+public interface PicMapper {
+	public void 
+}

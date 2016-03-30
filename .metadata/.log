@@ -67,3 +67,311 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-03-30 12:22:45.971
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-03-30 12:22:45.999
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:22:52.300
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:22:52.317
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:23:46.185
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:23:46.225
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:24:10.236
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:24:10.256
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:24:10.311
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:25:11.439
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:25:11.444
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:25:23.071
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:25:23.077
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:28:02.496
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:28:02.511
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:28:02.568
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:28:19.320
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:28:19.331
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 12:28:19.343
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2016-03-30 15:16:57.349 -----------------------------------------------
+eclipse.buildId=3.6.4.201503100339-RELEASE-e44
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-03-30 15:17:14.147
+!MESSAGE Caught exception in FS.readPipe()
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-30 15:17:15.512
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-03-30 15:17:15.528
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Champagne'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:17:24.702
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:17:24.702
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-03-30 15:20:08.496
+!MESSAGE Could not auto-share project mybatis
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“mybatis”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-03-30 15:20:08.496
+!MESSAGE 提供的 SVN 信息与磁盘上“mybatis”项目的信息不相匹配。
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:21:14.621
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:21:14.621
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:21:46.398
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:21:46.429
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:21:52.055
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:21:52.071
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2016-03-30 15:23:17.849
+!MESSAGE Could not auto-share project webService
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“webService”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2016-03-30 15:23:17.849
+!MESSAGE 提供的 SVN 信息与磁盘上“webService”项目的信息不相匹配。
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:23:40.562
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:23:40.562
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:23:48.953
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:23:48.969
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:24:31.137
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:24:31.184
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:24:39.623
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:24:39.639
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:25:08.189
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:25:08.189
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:25:12.721
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:25:12.721
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:27:04.775
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:27:04.775
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:27:26.284
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:27:26.299
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:27:52.478
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:27:52.510
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:28:22.094
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:28:22.110
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:28:25.365
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:28:25.381
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:29:07.447
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:29:07.447
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:29:29.343
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:29:29.359
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:30:48.137
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:30:48.153
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:31:34.512
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:31:34.543
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:33:28.342
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:33:28.358
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:34:19.646
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:34:19.662
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:34:50.780
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:34:50.780
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:35:15.092
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:35:15.107
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:35:24.095
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:35:24.111
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:35:53.777
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:35:53.792
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:37:00.370
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:37:00.370
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:39:59.614
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:39:59.630
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:40:30.908
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:40:30.923
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:43:38.308
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:43:38.323
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:44:39.670
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:44:39.686
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:50:49.671
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:50:49.671
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:51:00.038
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:51:00.054
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:51:28.605
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:51:28.620
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:52:11.708
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-30 15:52:11.724
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!

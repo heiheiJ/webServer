@@ -1,0 +1,11 @@
+package com.jhyarrow.mybatis.mapper;
+
+import java.util.ArrayList;
+
+import com.jhyarrow.mybatis.entity.Blog;
+
+
+public interface BlogMapper {
+	public Blog getBlogById(String id);
+	public void createBlog(Blog blog);
+}

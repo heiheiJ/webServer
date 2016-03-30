@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;webServer/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;mybatis&apos;&#x0D;&#x0A;- Destination element: &apos;webServer/src/main/java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     mybatis/src/main/java/com.jhyarrow.mybatis.entity&#x0D;&#x0A;     mybatis/src/main/java/com.jhyarrow.mybatis.util&#x0D;&#x0A;     mybatis/src/main/java/com.jhyarrow.mybatis.mapper" description="Copy packages" destination="=webServer/src\/main\/java" element1="/src\/main\/java&lt;com.jhyarrow.mybatis.entity" element2="/src\/main\/java&lt;com.jhyarrow.mybatis.util" element3="/src\/main\/java&lt;com.jhyarrow.mybatis.mapper" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1459322474308" version="1.0"/>
+</session>

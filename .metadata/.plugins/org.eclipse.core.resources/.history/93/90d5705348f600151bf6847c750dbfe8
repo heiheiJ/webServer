@@ -1,0 +1,11 @@
+package com.jhyarrow.mybatis.mapper;
+
+import com.jhyarrow.mybatis.entity.Author;
+
+
+public interface AuthorMapper {
+	public Author getAuthorById(String id);
+	public void createAuthor(Author author);
+	public Author getAuthorByName(String name);
+	public void updateAuthor(Author author);
+}
