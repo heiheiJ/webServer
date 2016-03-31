@@ -30,6 +30,18 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="H:\complete\jiurong\webService"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -54,13 +66,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.jhyarrow.webServer"/>
 		</list>
 		<list key="groupId">
-			<item value="com.jhyarrow"/>
 		</list>
 		<list key="artifactId">
-			<item value="webServer"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
