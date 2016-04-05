@@ -1,9 +1,12 @@
 package com.jhyarrow.webService.dao;
 
+import java.util.List;
+
 import com.jhyarrow.webService.entity.FileEntity;
 
 
-public interface FileMapper {
-	public void addFile(FileEntity file);
-	public FileEntity getFileById(String id);
+public interface FileMapper extends BaseMapper{
+	void addFile(FileEntity file);
+	FileEntity getFileById(String id);
+	List<FileEntity> getFiles(String id);
 }

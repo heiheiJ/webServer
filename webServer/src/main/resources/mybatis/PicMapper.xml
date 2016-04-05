@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jhyarrow.webService.dao.PicMapper">
+	<resultMap type="com.jhyarrow.webService.entity.PicEntity" id="PicMap"
+		extends="com.jhyarrow.webService.dao.BaseMapper.BaseMap">
+		<id column="pic_id" property="picId" jdbcType="VARCHAR"/>
+		<result column="pic_no" property="picNo" jdbcType="INTEGER"/>
+		<result column="file_id" property="fileId" jdbcType="VARCHAR"/>
+		<result column="pic_size" property="picSize" jdbcType="INTEGER"/>
+		<result column="pic_content" property="picContent" jdbcType="BLOB"/>
+		<association property="fileEntity" 
+		javaType="com.jhyarrow.webService.entity.FileEntity" column="file_id"
+		select="com.jhyarrow.webService.dao.FileMapper.getFileById">
+		</association>
+	</resultMap>
+	
+	<select id="getPics" resultMap="PicMap" parameterType="string">
+		select * from pic
+		where file_id = #{fileId}
+	</select>
+	
+	<select id="getPicById" resultMap="PicMap" parameterType="string">
+		select * 
+		from pic
+		where pic_id = #{picId}
+	</select>
+</mapper>

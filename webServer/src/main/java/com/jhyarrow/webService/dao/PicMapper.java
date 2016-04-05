@@ -1,5 +1,7 @@
 package com.jhyarrow.webService.dao;
 
-public interface PicMapper {
-	
+import com.jhyarrow.webService.entity.PicEntity;
+
+public interface PicMapper extends BaseMapper{
+	PicEntity getPicById(String picId);
 }

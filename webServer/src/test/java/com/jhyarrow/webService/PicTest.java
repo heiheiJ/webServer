@@ -9,20 +9,21 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.alibaba.fastjson.JSON;
-import com.jhyarrow.webService.entity.UserEntity;
-import com.jhyarrow.webService.service.UserService;
+import com.jhyarrow.webService.entity.PicEntity;
+import com.jhyarrow.webService.service.PicService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:spring-mybatis.xml"})
-
-public class UserTest {
-	private static Logger logger = Logger.getLogger(UserTest.class);
+public class PicTest {
+	private static Logger logger = Logger.getLogger(PicTest.class);
+	
 	@Resource
-	private UserService userService = null;
+	private PicService picService = null;
 	
 	@Test
 	public void test(){
-		UserEntity user = userService.getUserById("46ef754a6e1141cc8895423b0a0d0cb6");
-		logger.info(JSON.toJSONString(user));
-	}	
+		PicEntity pic = picService.getPicById("b3d9a1c9866a49b1b6c78cd1b27bc6fb");
+		logger.info(JSON.toJSONString(pic));
+		System.out.println(pic.getPicContent());
+	}
 }

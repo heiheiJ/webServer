@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jhyarrow.webService.dao.BaseMapper">
+	<resultMap type="com.jhyarrow.webService.entity.BaseEntity" id="BaseMap">
+		<result column="create_time" property="createTime" jdbcType="DATE"/>
+		<result column="last_modify" property="lastModify" jdbcType="DATE"/>
+		<result column="is_delete" property="isDelete" jdbcType="BOOLEAN"/>
+	</resultMap>
+</mapper>
