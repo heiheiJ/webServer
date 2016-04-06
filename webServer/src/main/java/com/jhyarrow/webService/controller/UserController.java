@@ -22,4 +22,13 @@ public class UserController {
 		model.addAttribute("user",user);
 		return "showUser";
 	}
+	
+	@RequestMapping("/register")
+	public String register(HttpServletRequest request,Model model){
+		this.userService.addUser(request.getParameter("username"),
+				request.getParameter("password"),
+				request.getParameter("email"),
+				request.getParameter("phone"));
+		return null;
+	}
 }

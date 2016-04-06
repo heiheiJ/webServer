@@ -17,5 +17,10 @@ public class UserServiceImpl implements UserService{
 	public UserEntity getUserById(String userId) {
 		return this.userMapper.getUserById(userId);
 	}
+
+	public void addUser(String username, String password, String email,String phone) {
+		UserEntity user = new UserEntity(username,password,email,phone);
+		this.userMapper.add(user);
+	}
 	
 }

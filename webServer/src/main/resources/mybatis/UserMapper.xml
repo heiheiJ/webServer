@@ -39,7 +39,7 @@
 			#{state},
 			NOW(),
 			NOW(),
-			#{isDelete}
+			false
 		)
 		
 	</insert>

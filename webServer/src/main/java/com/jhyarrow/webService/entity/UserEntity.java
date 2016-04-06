@@ -1,6 +1,7 @@
 package com.jhyarrow.webService.entity;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class UserEntity extends BaseEntity{
 	private String userId;//用户ID
@@ -10,6 +11,15 @@ public class UserEntity extends BaseEntity{
 	private String phone;//手机号码
 	private boolean state;//用户状态
 	private ArrayList<FileEntity> fileList;
+	
+	public UserEntity(String userName,String password,String email,String phone){
+		this.userId = UUID.randomUUID().toString().replaceAll("-", "");
+		this.userName = userName;
+		this.password = password;
+		this.email = email;
+		this.phone = phone;
+		this.state = false;
+	}
 	public ArrayList<FileEntity> getFileList() {
 		return fileList;
 	}
