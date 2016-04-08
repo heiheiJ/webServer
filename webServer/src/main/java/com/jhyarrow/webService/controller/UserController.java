@@ -23,16 +23,26 @@ public class UserController {
 	@ResponseBody
 	public Map<String,String> register(HttpServletRequest request,HttpServletResponse response)throws Exception{
 		Map<String,String> map = new HashMap<String,String>();
+		boolean flag = true;
 		if (this.userService.getUserByEmail(request.getParameter("email")) != null){
-			map.put("email", "register");
+			map.put("email", "false");
+			flag = false;
+		}else{
+			map.put("email", "true");
 		}
 		if(this.userService.getUserByPhone(request.getParameter("phone")) != null){
-			map.put("phone", "register");
+			map.put("phone", "false");
+			flag = false;
+		}else{
+			map.put("phone", "true");
 		}
 		if(this.userService.getUserByName(request.getParameter("username")) != null){
-			map.put("username", "register");
+			map.put("username", "false");
+			flag = false;
+		}else{
+			map.put("username", "true");
 		}
-		if (map.size() != 0){
+		if (!flag){
 			return map;
 		}
 		this.userService.addUser(request.getParameter("username"),
