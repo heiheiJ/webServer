@@ -2,6 +2,7 @@ package com.jhyarrow.webService.controller;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -18,7 +19,6 @@ import com.jhyarrow.webService.service.UserService;
 public class UserController {
 	@Resource
 	private UserService userService;
-	
 	@RequestMapping("/register")
 	@ResponseBody
 	public Map<String,String> register(HttpServletRequest request,HttpServletResponse response)throws Exception{
@@ -49,21 +49,28 @@ public class UserController {
 				request.getParameter("password"),
 				request.getParameter("email"),
 				request.getParameter("phone"));
-		return null;
+		return map;
 	}
 	
 	@RequestMapping("/login")
 	@ResponseBody
 	public Map<String,String> login(HttpServletRequest request,HttpServletResponse response) throws Exception{
-		String pass = this.userService.getUserByName(
-				request.getParameter("username")).getUserName();
 		Map<String,String> map = new HashMap<String,String>();
+		if(this.userService.getUserByName(request.getParameter("username")) == null){
+			map.put("username", "false");
+			return map;
+		}else{
+			map.put("username", "true");
+		}
+		String pass = this.userService.getUserByName(
+				request.getParameter("username")).getPassword();
+		System.out.println("pass:" + pass);
+		System.out.println("password:" + request.getParameter("password"));
 		if(pass.equals(request.getParameter("password"))){
 			map.put("result", "true");
 		}else{
 			map.put("result", "false");
 		}
-		System.out.println("login");
 		return map;
 	}
 }
