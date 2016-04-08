@@ -20,9 +20,15 @@ public class UserTest {
 	@Resource
 	private UserService userService = null;
 	
-	@Test
-	public void test(){
+	//@Test
+	public void testId(){
 		UserEntity user = userService.getUserById("46ef754a6e1141cc8895423b0a0d0cb6");
 		logger.info(JSON.toJSONString(user));
-	}	
+	}
+	
+	@Test
+	public void testUsername(){
+		UserEntity user = userService.getUserByName("panpasi2007");
+		logger.info(JSON.toJSONString(user));
+	}
 }

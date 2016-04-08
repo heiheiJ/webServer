@@ -67,4 +67,22 @@
 		from user
 		where user_id = #{userId}
 	</select>
+	
+	<select id="getUserByName" resultMap="UserMap" parameterType="string">
+		select * 
+		from user
+		where username = #{userName}
+	</select>
+	
+	<select id="getUserByEmail" resultMap="UserMap" parameterType="string">
+		select *
+		from user
+		where email = #{email}
+	</select>
+	
+	<select id="getUserByPhone" resultMap="UserMap" parameterType="string">
+		select *
+		from user
+		where phone = #{phone}
+	</select>
 </mapper>

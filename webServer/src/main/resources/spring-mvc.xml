@@ -46,5 +46,14 @@
         <!-- 内存中的最大值 -->
         <property name="maxInMemorySize" value="40960" />  
     </bean> 
+    
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"
+		p:ignoreDefaultModelOnRedirect="true" >
+			<property name="messageConverters">
+				<list>
+					<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+				</list>
+			</property>
+		</bean>
 
 </beans>

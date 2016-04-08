@@ -9,4 +9,7 @@ public interface UserMapper extends BaseMapper{
 	String getUserPasswordByUserEmail(String email);
 	boolean getStateByUserName(String userName);
 	UserEntity getUserById(String userId);
+	UserEntity getUserByName(String username);
+	UserEntity getUserByPhone(String phone);
+	UserEntity getUserByEmail(String email);
 }

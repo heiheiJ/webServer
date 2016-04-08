@@ -12,14 +12,6 @@ public class UserEntity extends BaseEntity{
 	private boolean state;//用户状态
 	private ArrayList<FileEntity> fileList;
 	
-	public UserEntity(String userName,String password,String email,String phone){
-		this.userId = UUID.randomUUID().toString().replaceAll("-", "");
-		this.userName = userName;
-		this.password = password;
-		this.email = email;
-		this.phone = phone;
-		this.state = false;
-	}
 	public ArrayList<FileEntity> getFileList() {
 		return fileList;
 	}
