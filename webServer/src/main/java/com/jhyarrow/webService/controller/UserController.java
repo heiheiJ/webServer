@@ -1,8 +1,9 @@
 package com.jhyarrow.webService.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.logging.Logger;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.jhyarrow.webService.entity.FileEntity;
 import com.jhyarrow.webService.service.UserService;
 
 @Controller
@@ -71,6 +73,15 @@ public class UserController {
 		}else{
 			map.put("result", "false");
 		}
+		return map;
+	}
+	
+	@RequestMapping("/getFiles")
+	@ResponseBody
+	public Map<String,List<FileEntity>> getFiles(HttpServletRequest request,HttpServletResponse response) throws Exception{
+		List<FileEntity> files = this.userService.getUserByName(request.getParameter("username")).getFileList();
+		Map<String,List<FileEntity>> map = new HashMap<String,List<FileEntity>>();
+		map.put("files", files);
 		return map;
 	}
 }

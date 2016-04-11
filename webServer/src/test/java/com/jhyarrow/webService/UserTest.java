@@ -28,7 +28,7 @@ public class UserTest {
 	
 	@Test
 	public void testUsername(){
-		UserEntity user = userService.getUserByName("panpasi2007");
-		logger.info(JSON.toJSONString(user));
+		UserEntity user = userService.getUserByName("panpasi2008");
+		logger.info(JSON.toJSONString(user.getFileList()));
 	}
 }

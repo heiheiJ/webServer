@@ -2,6 +2,9 @@ package com.jhyarrow.webService.entity;
 
 import java.util.ArrayList;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(value={"userEntity","picList"})
 public class FileEntity extends BaseEntity{
 	private String fileId;//文件ID
 	private String fileName;//文件名
