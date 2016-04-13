@@ -1,5 +1,8 @@
 package com.jhyarrow.webService;
 
+import java.math.BigInteger;
+import java.util.Date;
+
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
@@ -20,10 +23,17 @@ public class FileTest {
 	@Resource
 	private FileService fileService = null;
 	
-	@Test
+	//@Test
 	public void test(){
 		FileEntity file = fileService.getFileById("11257efab0994269af97d1452c45c218");
 		logger.info(JSON.toJSONString(file));
 	}
+	@Test
+	public void date(){
+		BigInteger tmp = new BigInteger("1458576000000");
+		Date date = new Date(tmp.longValue());
+		System.out.println(date.getYear() + 1900);
+	}
+
 
 }
