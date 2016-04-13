@@ -6,10 +6,9 @@ import org.springframework.stereotype.Service;
 
 import com.jhyarrow.webService.dao.FileMapper;
 import com.jhyarrow.webService.entity.FileEntity;
-import com.jhyarrow.webService.service.FileService;
 
 @Service("fileService")
-public class FileServiceImpl implements FileService{
+public class FileServiceImpl{
 
 	@Resource
 	private FileMapper fileMapper;
@@ -17,5 +16,6 @@ public class FileServiceImpl implements FileService{
 	public FileEntity getFileById(String id) {
 		return this.fileMapper.getFileById(id);
 	}
+
 
 }

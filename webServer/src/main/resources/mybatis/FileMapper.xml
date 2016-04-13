@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jhyarrow.webService.dao.FileMapper">
-	<resultMap type="com.jhyarrow.webService.entity.FileEntity" id="FilesMap"
+	<resultMap type="com.jhyarrow.webService.entity.FileEntity" id="FileMap"
 		extends="com.jhyarrow.webService.dao.BaseMapper.BaseMap">
 		<id column="file_id" property="fileId" jdbcType="VARCHAR"/>
 		<result column="file_name" property="fileName" jdbcType="VARCHAR"/>
@@ -14,22 +14,14 @@
 		javaType="com.jhyarrow.webService.entity.UserEntity" column="user_id"
 		select="com.jhyarrow.webService.dao.UserMapper.getUserById">
 		</association>
-	</resultMap>
-	
-	<resultMap type="com.jhyarrow.webService.entity.FileEntity" id="FileMap"
-		extends="com.jhyarrow.webService.dao.BaseMapper.BaseMap">
-		<id column="file_id" property="fileId" jdbcType="VARCHAR"/>
-		<result column="file_name" property="fileName" jdbcType="VARCHAR"/>
-		<result column="file_size" property="fileSize" jdbcType="VARCHAR"/>
-		<result column="pic_count" property="picCount" jdbcType="INTEGER"/>
-		<result column="file_type" property="fileType" jdbcType="VARCHAR"/>
 		<collection property="picList" column="file_id"
 		ofType="com.jhyarrow.webService.entity.PicEntity" 
 		select="com.jhyarrow.webService.dao.PicMapper.getPics">
 		</collection>
 	</resultMap>
 	
-	<select id="getFiles" resultMap="FilesMap" parameterType="string">
+	
+	<select id="getFiles" resultMap="FileMap" parameterType="string">
 		select * from file
 		where user_id = #{userId}
 	</select>

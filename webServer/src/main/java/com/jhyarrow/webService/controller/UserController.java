@@ -9,16 +9,20 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.jhyarrow.webService.UserTest;
 import com.jhyarrow.webService.entity.FileEntity;
+import com.jhyarrow.webService.entity.PicEntity;
 import com.jhyarrow.webService.service.UserService;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
+	private static Logger logger = Logger.getLogger(UserController.class);
 	@Resource
 	private UserService userService;
 	@RequestMapping("/register")
@@ -51,6 +55,7 @@ public class UserController {
 				request.getParameter("password"),
 				request.getParameter("email"),
 				request.getParameter("phone"));
+		logger.info(map);
 		return map;
 	}
 	
@@ -73,6 +78,7 @@ public class UserController {
 		}else{
 			map.put("result", "false");
 		}
+		logger.info(map);
 		return map;
 	}
 	
@@ -82,6 +88,17 @@ public class UserController {
 		List<FileEntity> files = this.userService.getUserByName(request.getParameter("username")).getFileList();
 		Map<String,List<FileEntity>> map = new HashMap<String,List<FileEntity>>();
 		map.put("files", files);
+		logger.info(map);
+		return map;
+	}
+	
+	@RequestMapping("/getPics")
+	@ResponseBody
+	public Map<String,List<PicEntity>> getPics(HttpServletRequest request,HttpServletResponse response) throws Exception{
+		List<PicEntity> pics = this.userService.getUserByName(request.getParameter("username"))
+				.getFileList().get(Integer.parseInt(request.getParameter("position"))).getPicList(); 
+		Map<String,List<PicEntity>> map = new HashMap<String,List<PicEntity>>();
+		map.put("pics", pics);
 		return map;
 	}
 }
