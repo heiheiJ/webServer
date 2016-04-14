@@ -34,5 +34,10 @@ public class FileServiceImpl implements FileService{
 		return this.fileMapper.getFileById(file.getFileId());
 	}
 
+	public void editFileName(String fileId, String fileName) {
+		this.fileMapper.editFileName(fileId,fileName);
+		
+	}
+
 
 }

@@ -31,4 +31,10 @@ public class FileController {
 		System.out.println("fileName" + request.getParameter("fileName"));
 		return this.fileService.addFile(user,request.getParameter("fileName"));
 	}
+	
+	@RequestMapping("/editFileName")
+	@ResponseBody
+	public void editFileName(HttpServletRequest request,HttpServletResponse response)throws Exception{
+		this.fileService.editFileName(request.getParameter("fileId"),request.getParameter("fileName"));
+	}
 }

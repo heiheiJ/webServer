@@ -6,4 +6,5 @@ import com.jhyarrow.webService.entity.UserEntity;
 public interface FileService {
 	public FileEntity getFileById(String id);
 	public FileEntity addFile(UserEntity user,String fileName);
+	public void editFileName(String fileId,String fileName);
 }

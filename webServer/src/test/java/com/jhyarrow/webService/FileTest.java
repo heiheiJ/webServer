@@ -1,8 +1,5 @@
 package com.jhyarrow.webService;
 
-import java.math.BigInteger;
-import java.util.Date;
-
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
@@ -29,11 +26,8 @@ public class FileTest {
 		logger.info(JSON.toJSONString(file));
 	}
 	@Test
-	public void date(){
-		BigInteger tmp = new BigInteger("1458576000000");
-		Date date = new Date(tmp.longValue());
-		System.out.println(date.getYear() + 1900);
+	public void testFile(){
+		this.fileService.editFileName("11257efab0994269af97d1452c45c218", "666");
 	}
-
 
 }
